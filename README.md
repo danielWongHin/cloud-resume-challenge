@@ -7,7 +7,7 @@ In this project I developed a S3 static website with Code Pipline incorportating
 Required Knowledge:
 
 - AWS S3
-- Github
+- Github or AWS Codecommit
 - AWS CodePipline
 - AWS IAM
 - AWS CloudFront
