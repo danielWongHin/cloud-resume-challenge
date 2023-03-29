@@ -136,8 +136,10 @@ git push
 
 - Go to the `S3` console, empty the bucket. then delete the bucket 
 
-# Follow-up
+## Further improvement
 
 - Using Infrastructure as a code to deploy the environment
 
 - Command Line operation
+
+- Include a build stage by using Jenkins or CodeBuild
