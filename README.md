@@ -2,7 +2,7 @@
 
 In this project I developed a S3 static website with Code Pipline incorportating commit and deploy steps. The Static Website will using my resume as demostration.
 
-![Architecture](https://github.com/danielWongHin/cv/blob/main/diagram.png)
+![Architecture](https://github.com/danielWongHin/cv/blob/main/Infrastrucutre.png)
 
 Required Knowledge:
 
