@@ -14,12 +14,11 @@ Required Knowledge:
 - AWS Route 53
 - AWS Certificate Manager
 
-
 The project consist of the following stage:
 
 - STAGE 1 : Create a S3 bucket to host your Static Website
 - STAGE 2 : Configure CodePipline with Github as commit source and auto deploy to S3 Bucket.
-- STAGE 3 : Request the Certificate from AWS Certificate Manager 
+- STAGE 3 : Request the Certificate from AWS Certificate Manager
 - STAGE 4 : Configure Cloudfront Distribution
 - STAGE 5 : (Optional) : Register a domain from Route 53 and configure the domain record
 - STAGE 6 : Clean Up
@@ -54,7 +53,7 @@ The project consist of the following stage:
 
 - Select `Amazon S3` as your deploy provider, select your bucket's region and created bucket. Enable `Extract file before deploy`. Click on <kbd>Next</kbd>
 
-- Click on <kbd>Create Pipeline</kbd>, once the pipeline is created, it will automatically release a change. If you don't have any file on your github directories, the release will be failed which is normal. 
+- Click on <kbd>Create Pipeline</kbd>, once the pipeline is created, it will automatically release a change. If you don't have any file on your github directories, the release will be failed which is normal.
 
 - If you don't have any file or you would like to update your directoryBack to your computer terminal, in your static website file directories, which has source controlled by your github repo, use the following git command to commit to your directory:-
 
@@ -84,7 +83,7 @@ git push
 
 - Select `Request a public certificate`, click on <kbd>Next</kbd>
 
-- To protect your connection of your domain and sub-domain, Enter wild card of your domain in `Fully qualified domain name`, eg. *.yourdomainname
+- To protect your connection of your domain and sub-domain, Enter wild card of your domain in `Fully qualified domain name`, eg. \*.yourdomainname
 
 - Leave the other's setting as default and click on <kbd>Request</kbd>
 
@@ -134,7 +133,7 @@ git push
 
 - Go to the `Codepipeline` console, delete the pipeline
 
-- Go to the `S3` console, empty the bucket. then delete the bucket 
+- Go to the `S3` console, empty the bucket. then delete the bucket
 
 ## Further improvement
 
