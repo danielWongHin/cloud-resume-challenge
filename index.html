@@ -1,132 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Daniel's Portfolio Website</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfilio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="#">
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Personal Site</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Daniel
+        </a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-</head>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+          </li>
 
-<body>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link view-number" href="">Couldn't read views</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <table cellspacing="20">
-        <tr>
-            <!-- <td><img src="fake-human-circle-img.png" alt="this is a fake profile picture for testing case">
-            </td>
-        waiting for my professonal oicture -->
-            <td>
-                <h1>Daniel Wong </h1>
-                <p><em> <strong>Cloud Engineer</strong> with enthusiasm in Networking, Security, Automation and DevOps <strong></strong> </em></p>
-                <p>As a Senior System Support Engineer with experience in AWS infrastructure implementation, Customer Service, and DevOps methodologies, I bring expertise in Cloud solution design, project implementation, and maintenance with strong troubleshooting and problem-solving skills. 
-                    Also, I am adept at collaborating with diverse teams. 
-                    As a fluent bilingual in English and Cantonese and conversational Mandarin, I offer excellent communication and interpersonal skills and am able to provide effective technical assistance to clients and colleagues. 
-                    I am excited to bring my skills and experience to a new role where I can continue to grow and excel.</p>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">"Become the best version of yourself"</h2>
+            <!-- <p class="hero_desc">I am a Cloud Engineer in Toronto</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-            </td>
-        </tr>
-    </table>
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+          <!-- <h1 class="text-center">About Me</h1> -->
+          <div class="d-flex justify-content-around">
+              <div class="col-lg-4">
+                  <img src="img/about.jpg" class= "imageAboutPage" alt="" >
+              </div>
 
+              <div class="col-lg-5">
+                <h1 class="fw-light">Daniel Wong</h1>
+                <h5 class="mb-5">Cloud Computing| Python | DevOps | Automation
+                </h5>
+                  <p> Hello there, Welcome to my site ! I am a Cloud Enthusiast and an AWS Certified Solutions Architect Professonial. 
+                    I am passionate about the industry with related technical skills and have been certified in several fields. 
+                    Now, I am focusing on Cloud and DevOps.
+                    what I am pursuing is, "With just a laptop and an internet connection, I can perform at my best from anywhere."
+                      
+                  </p>
 
+                  <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank" rel="noopener noreferrer">Download my resume</a>
+                  <!-- <div class="row mt-3">
+                      <div class="col-md-6">
+                          <ul>
+                              <li>Name: Daniel Wong</li>
+                              <li>Birth: Mar 1997</li>
+                              <li>Occupation: Cloud Engineer</li>
+                              <li>Location: Toronto, Canada</li>
 
-    <hr> 
-      <h3>Work Experience</h3>
+                          </ul>
+                      </div>
+                      <div class="col-md-6">
+                          <ul>
+                              <li>Name: David Parker</li>
+                              <li>Age: 28</li>
+                              <li>Occupation: Web Developer</li>
 
-    <table cellspacing="10">
-        <thead>
-            <th>Dates</th>
-            <th>Work</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2020 - 2022</td>
-                <td>Graduate Trainee</td>
-            </tr>
-            <tr>
-                <td>2022 - 2023 Jan</td>
-                <td>Senior System Support Engineer</td>
+                          </ul>
+                      </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="row mt-3">
+                      <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                      </p>
+                  </div> -->
+              </div>
+          </div>
+  </section>
 
-            </tr>
-        </tbody>
-        <tfoot>
+  <!-- TimeLine -->
 
-        </tfoot>
-    </table>
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card ">
+                <div class="card-body">
+                    <h4 class="card-title">Education & Certifications</h4>
+                    <div id="content">
+                        <ul class="timeline">
+                            <li class="event" data-date="May 2019">
+                                <h3>Registration</h3>
+                                <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                            </li>
+                            <li class="event" data-date="2:30 - 4:00pm">
+                                <h3>Opening Ceremony</h3>
+                                <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                            </li>
+                            <li class="event" data-date="5:00 - 8:00pm">
+                                <h3>Main Event</h3>
+                                <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
+                            </li>
+                            <li class="event" data-date="8:30 - 9:30pm">
+                                <h3>Closing Ceremony</h3>
+                                <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-    <hr>
-    <h3>Skills</h3>
+            </div>
+        </div>
+    </div>
+  
+</div>
+  <!-- services section-->
+  <section id="services">
+    <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
 
-    <table cellspacing="10">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
 
-        <tbody>
-            <tr>
-                <td>AWS</td>
-            </tr>
-        </tbody>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">SEO</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
 
-        </td>
-        <td>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">DevOps</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
 
-            <tr>
-                <td>Linux</td>
-            </tr>
-
-        </td>
-        </tr>
-
-        <tr>
-            <td>
-
-        <tr>
-            <td>Python</td>
-        </tr>
-</table>
-        <hr>
-    
-
-
-    
-    <!-- <ul>
-        <li>MSc Multimedia Info Technology with distinction  &nbsp; &nbsp; &nbsp; &nbsp; Aug 2019 - Jul 2020</li>
-        <li>Bachelor of Engineering in Information Engineering&nbsp; &nbsp; &nbsp; &nbsp;Aug 2015 - Aug 2019</li>
-    </ul> -->
-<h3>Education</h3>
-    <table cellspacing="10">
-        <thead>
-            <th>Dates</th>
-            <th>Degree</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2019 - 2020</td>
-                <td>MSc Multimedia Info Technology with distinction</td>
-            </tr>
-            <tr>
-                <td>2015 - 2019</td>
-                <td>Bachelor of Engineering in Information Engineering</td>
-
-            </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
-    <hr>
-    <h3>Hobbies</h3>
-    <ol>
-        <li>Gym</li>
-        <li>Martial Arts</li>
-        <li>Reading</li>
-        <li><a href="https://fantasy.premierleague.com/entry/8476327/event/3">FPL</a></li>
-    </ol>
-    <!-- <h3><a href="conatct.html">contact me</a></h3> -->
-    <hr>
-
-
- 
-
-</body>
-
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<script src="index.js">  </script>
+  </body>
 </html>
