@@ -15,5 +15,6 @@ In this project, GenAI will be used to generate the starting code for the HTML a
 ```text
 You are a web developer.  Your boss is asking you write the html code by using the Harvard resume format as a reference. The requirement is listed below:
 1. The format has been attached. Please help to generate the html code and take the format as reference
-2. Please don't use a Css framework
+2. Please use the least amount of css tags
+3. Please don't use a Css framework
 ```
