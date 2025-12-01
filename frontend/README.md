@@ -18,3 +18,21 @@ You are a web developer.  Your boss is asking you write the html code by using t
 2. Please use the least amount of css tags
 3. Please don't use a Css framework
 ```
+## HTTP meta tag 
+1. The webpage uses the UTF-8 character encoding, which is the standard encoding for almost all languages and symbols
+2. The tag `<meta name="viewport">`, makes the webpage responsive and mobile-friendly
+3. The effects `width=device-width`, sets width equal to the device’s screen width
+4. The effects `initial-scale=1.0`, makes the page start at normal zoom level
+
+## Serve Static Website Locally
+
+### Install HTTP Server
+```
+npm i http-server -g
+```
+
+### Server Website
+```
+cd frontend
+http-server
+```
