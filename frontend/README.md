@@ -1,6 +1,6 @@
 # Frontend Technical Specification
 
-The purpose of the frontend is to create a static website that serves an html resume, portfolio page and also the knowledge page.
+The purpose of the frontend is to create a static website that serves an html resume, and project.
 
 **Remark:** The content might not be able to finish before the submission, but the frontend of the resume should be available.
 
