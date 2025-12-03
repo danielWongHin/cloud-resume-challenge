@@ -36,3 +36,21 @@ npm i http-server -g
 cd frontend
 http-server
 ```
+
+## Project Page
+### Bootstrap
+
+In `project.html`, Bootstrap has been used for styling testing purpose. To use bootstrap, the stylesheet has been linked as show below within the head tag `<head></head>`
+
+``` 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+```
+Also, the javascript file is needed for the JavaScript bundle before closing `</body>
+
+```
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```
+### Render Projects
+
+In `project.js`, the project example is saved and the function `renderProjects()` is saved for rendering the project.
