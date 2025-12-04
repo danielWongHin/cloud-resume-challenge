@@ -53,4 +53,24 @@ Also, the javascript file is needed for the JavaScript bundle before closing `</
 ```
 ### Render Projects
 
-In `project.js`, the project example is saved and the function `renderProjects()` is saved for rendering the project.
+In `project.js`, the project example is saved and the function `renderProjects()` is saved for rendering the project. 
+
+Everything at the top level of a script becomes a global variable. Once the `projectData.js` loads first, the global variable `project` can be used within `project.js`
+
+### Conditional Rendering
+
+```
+<!-- Conditional Rendering -->
+          ${
+            project.links.repo
+              ? `
+            <div class="project-links">
+              <a href="${project.links.repo}" target="_blank">GitHub Repo</a>
+            </div>
+          `
+              : ""
+          }
+        </div>
+```
+
+If the project has a repository link, it will show the HTML; Otherwise it will show nothing
