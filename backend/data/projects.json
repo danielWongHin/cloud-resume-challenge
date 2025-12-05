@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Project One — Parking Ticket App",
+    "description": "Lorem ipsum...",
+    "image": "https://placehold.co/320x200",
+    "links": {
+      "repo": "https://github.com/example/project1"
+    },
+    "body": "# Parking Ticket App\nA full-stack web application for managing city parking violations.\n\n## Features\n- Create and manage tickets\n- Upload evidence images\n- Admin dashboard\n\n**Tech stack:** Node.js, Express, PostgreSQL"
+  },
+  {
+    "title": "Project Two — Music Streaming UI Redesign",
+    "description": "Lorem ipsum...",
+    "image": "https://placehold.co/320x200",
+    "links": {
+      "repo": "https://github.com/example/project2"
+    },
+    "body": "# Parking Ticket App\nA full-stack web application for managing city parking violations.\n\n## Features\n- Create and manage tickets\n- Upload evidence images\n- Admin dashboard\n\n**Tech stack:** Node.js, Express, PostgreSQL"
+  },
+  {
+    "title": "Project Three — School District Branding",
+    "description": "Lorem ipsum...",
+    "image": "https://placehold.co/320x200",
+    "links": {
+      "repo": "https://github.com/example/project2"
+    },
+    "body": "# Parking Ticket App\nA full-stack web application for managing city parking violations.\n\n## Features\n- Create and manage tickets\n- Upload evidence images\n- Admin dashboard\n\n**Tech stack:** Node.js, Express, PostgreSQL"
+  }
+]

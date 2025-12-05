@@ -1,6 +1,11 @@
 function renderProjects() {
   const container = document.getElementById("projects-list");
 
+   // Load your JSON file
+  const response = fetch("/data/projectsData.json");
+  const projects = response.json();
+  console.log(projects)
+
   projects.forEach((project) => {
     const card = document.createElement("div");
     card.className = "project-card";
