@@ -1,0 +1,47 @@
+---
+- name: Upload static website files to Azure Storage
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    storage_account_name: danielwongcrc2025
+    project_root: "{{ playbook_dir | realpath }}/../.."
+    frontend_dir: "{{ project_root }}/frontend/public"  # Folder containing index.html, css/, js/, etc.
+
+  # vars_files:
+  #   - auth.yml
+
+  tasks:
+
+
+    - name: Enable static website hosting on the storage account
+      ansible.builtin.command: >
+        az storage blob service-properties update
+        --account-name {{ storage_account_name }}
+        --static-website
+        --index-document index.html
+        --404-document index.html
+      changed_when: true
+
+    - name: Upload website content to $web
+      ansible.builtin.command: >
+        az storage blob upload-batch
+        --destination '$web'
+        --account-name {{ storage_account_name }}
+        --source {{ frontend_dir }}
+      register: upload_output
+      changed_when: "'Uploading' in upload_output.stdout"
+
+    - name: Show website endpoint
+      ansible.builtin.command: >
+        az storage account show
+        --name {{ storage_account_name }}
+        --query "primaryEndpoints.web"
+        -o tsv
+      register: endpoint
+      changed_when: false
+
+    - name: Display static website URL
+      ansible.builtin.debug:
+        msg: "Static website available at: {{ endpoint.stdout }}"

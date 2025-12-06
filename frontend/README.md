@@ -42,13 +42,13 @@ http-server
 
 In `project.html`, Bootstrap has been used for styling testing purpose. To use bootstrap, the stylesheet has been linked as show below within the head tag `<head></head>`
 
-``` 
+```html 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 ```
-Also, the javascript file is needed for the JavaScript bundle before closing `</body>
+Also, the javascript file is needed for the JavaScript bundle before closing `</body>`
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 ### Render Projects
@@ -59,7 +59,7 @@ Everything at the top level of a script becomes a global variable. Once the `pro
 
 ### Conditional Rendering
 
-```
+```js
 <!-- Conditional Rendering -->
           ${
             project.links.repo

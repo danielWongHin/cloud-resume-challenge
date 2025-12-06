@@ -1,9 +1,9 @@
-function renderProjects() {
+async function renderProjects() {
   const container = document.getElementById("projects-list");
 
    // Load your JSON file
-  const response = fetch("/data/projectsData.json");
-  const projects = response.json();
+  const response = await fetch("/data/projectsData.json");
+  const projects = await response.json();
   console.log(projects)
 
   projects.forEach((project) => {

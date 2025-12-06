@@ -54,3 +54,74 @@ nav a:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         justify-content: center;
     }
+
+    /* ===== MISCELLANEOUS SECTION ===== */
+
+.misc-section {
+    margin-top: 80px;
+    padding: 60px 20px;
+    background: #0d0f1a; /* dark navy like screenshot */
+    color: #d3d4d8;
+    text-align: center;
+}
+
+.misc-title {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 32px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.misc-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 160px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+.misc-left, .misc-right {
+    width: 45%;
+}
+
+.misc-header {
+    font-size: 18px;
+}
+
+.misc-divider {
+    opacity: 0.5;
+}
+
+.misc-count {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.misc-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.misc-links li {
+    margin: 10px 0;
+}
+
+.misc-links a {
+    text-decoration: none;
+    color: #d3d4d8;
+    font-size: 20px;
+}
+
+.misc-links a:hover {
+    color: white;
+}
+
+.misc-footer {
+    margin-top: 30px;
+    opacity: 0.8;
+    font-size: 16px;
+}
