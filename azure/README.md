@@ -59,8 +59,51 @@ which pip
 ```
 Remarks: The importance of venv
 
+## Storage Account
+
+```sh
+ansible-playbook ./playbooks/deploy-storage.yml
+```
+
 ## Configuration Management for Container
 
 In Azure, a storage would be managed by Iac. However, we observe that whether the containers are managed by Iac in Azure Bicep in uncertain
 
 As the updated deployment, we obsered that the previous version of container was not removed.
+
+## Cache purge
+
+In Cache Purge, we have use `ansible-vault` to create the secret credentials, CLOUDFLARE_API_TOKEN and CLOUDFLARE_ZONE_ID. After that, we have deploy the `purge.yml` to purge the cache. The tasks have included to the `upload.yml`.
+
+Everytime we run the below command, the modified code will be uploaded to the storage account and the cache will be purged.
+
+```sh
+ansible-playbook ./playbooks/upload.yaml --ask-vault-pass
+```
+
+## Azure Functions need Core Tools Tool Installed
+
+You need to install Core Tools or the deploy wont work. You need to install Azure Functions extension and best to create your Azure function from that interface.
+
+```sh
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg 
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg 
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs 2>/dev/null)-prod $(lsb_release -cs 2>/dev/null) main" > /etc/apt/sources.list.d/dotnetdev.list' 
+sudo apt-get update 
+sudo apt-get install azure-functions-core-tools-4
+```
+
+## Locally Test Python Env Var
+
+```sh
+cd backend-counter
+source .venv/bin/activate
+pip install -r requirements.txt
+func start
+```
+
+## CosmosDB
+
+```sh
+ansible-playbook ./playbooks/deploy-db.yaml 
+```
