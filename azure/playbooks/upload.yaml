@@ -32,6 +32,7 @@
         --destination '$web'
         --account-name {{ storage_account_name }}
         --source {{ frontend_dir }}
+        --overwrite true
       register: upload_output
       changed_when: "'Uploading' in upload_output.stdout"
 
