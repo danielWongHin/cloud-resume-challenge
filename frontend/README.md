@@ -38,6 +38,7 @@ http-server
 ```
 
 ## Project Page
+
 ### Bootstrap
 
 In `project.html`, Bootstrap has been used for styling testing purpose. To use bootstrap, the stylesheet has been linked as show below within the head tag `<head></head>`
@@ -51,11 +52,13 @@ Also, the javascript file is needed for the JavaScript bundle before closing `</
 ```html
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
-### Render Projects
+### Render Projects and Blogs
 
 In `project.js`, the project example is saved and the function `renderProjects()` is saved for rendering the project. 
 
 Everything at the top level of a script becomes a global variable. Once the `projectData.js` loads first, the global variable `project` can be used within `project.js`
+
+The same terminology applied to rendering blog
 
 ### Conditional Rendering
 

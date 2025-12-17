@@ -107,3 +107,19 @@ func start
 ```sh
 ansible-playbook ./playbooks/deploy-db.yaml 
 ```
+
+## Function App
+
+To deploy the Azure Function App, the extension, Azure Function has been installed. After that, the `/backend-counter/fuction_app.py` can be deployed to Azure Function App
+
+To test the functionality of the view_counter:
+
+```sh
+curl -x post https://viewcountercrc.azurewebsites.net/api/view_counter
+
+curl -v https://viewcounterappcrc.azurewebsites.net/api/view_counter
+
+curl -X POST https://viewcounterappcrc.azurewebsites.net/api/view_counter
+```
+
+Your domain name needs to be allowed in the CORS origin
