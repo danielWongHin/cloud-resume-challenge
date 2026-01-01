@@ -77,3 +77,7 @@ The same terminology applied to rendering blog
 ```
 
 If the project has a repository link, it will show the HTML; Otherwise it will show nothing
+
+### Miscellaneous section
+
+In the miscellaneous section, I have included the viewer counter, my linkedin and github profile. The viewer counter will display the number of vistor retrieved from the Azure CosmoDB. Once a new vistor access to the website, the counter will update the value to the DB and displayed the new value to the front page. 

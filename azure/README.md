@@ -61,6 +61,8 @@ Remarks: The importance of venv
 
 ## Storage Account
 
+The storage account is used to save the code of the webpage to host the static web page. Also, it is deployed automatically to support the Function App as well.
+
 ```sh
 ansible-playbook ./playbooks/deploy-storage.yml
 ```
