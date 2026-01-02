@@ -125,3 +125,7 @@ curl -X POST https://viewcounterappcrc.azurewebsites.net/api/view_counter
 ```
 
 Your domain name needs to be allowed in the CORS origin
+
+## Domain Name and DNS
+
+The domain name is registered from `Namecheap` and onboarded to `Cloudflare` for CDN and Proxy services. 
